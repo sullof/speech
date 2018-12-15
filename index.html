@@ -15,18 +15,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="reveal.js/css/reveal.css">
-    <link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
     <!-- Printing and PDF exports -->
     <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
     </script>
 
 </head>
@@ -38,395 +38,158 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
         <section>
+            <p>Francesco Sullo</p>
+            <h2>TRON Dev Tools</h2>
 
-            <h2>The arrogance<br/>of the genius</h2>
-            <i>(an oxymoron?)</i>
 
             <p>&nbsp;</p>
 
             <p><span
-                    class="fragment">A dishomogeneous conversation about feelings, choices,
-                and intelligence in relation to innovation</span>
+                    class="fragment">A dishomogeneous conversation about tools and strategy for smart contrac and dApp development on Tron</span>
             </p>
         </section>
 
-        <section>
+        <section data-transition="zoom">
             <p>first of all</p>
 
-            <h2>What is "innovation"?</h2>
+            <h1>Why?</h1>
         </section>
 
         <section>
-            <h3>Innovation is the introduction of ideas, products, processes and procedures useful to the
-                world</h3>
+            <p>Ethereum allows ~15 transactions per second, with a confirmation time between 15 and 30 seconds, when
+                there aren't special events causing a gas war</p>
+            <p
+                    class="fragment">
+                <b>Tron allows ~2000 transactions per second, with a confirmation time of only 3 seconds — and no gas
+                    wars, because there is no gas on Tron</b>
+            </p>
+
+        </section>
+
+        <section data-transition="zoom">
+            <h2>What does it mean?</h2>
         </section>
 
         <section>
-            <h3>Innovation relys on</h3>
-            <ul>
-                <li class="fragment grow">knowledge</li>
-                <li class="fragment grow">creativity</li>
-                <li class="fragment grow">power of observation</li>
-                <li class="fragment grow">focus</li>
-                <li class="fragment grow">commitment</li>
-                <li class="fragment grow">resiliency</li>
-                <li class="fragment grow">luck</li>
-                <li class="fragment grow">...</li>
-            </ul>
+            <i>According to<br/><img src="materials/dappradar.png" style="border:0" width="300"/></i>
+            <p><span class="fragment fade-in">On Ethereum, the most used dApp is</span>
+            <span class="fragment slide"><b>IDEX</b><br/><img src="materials/idex.png"/></span>
+            </p>
+            <p><span class="fragment fade-in">On Tron, the most used dApp is</span>
+                <span class="fragment slide"><b>TRONBET</b><br/><img src="materials/tronbet.png"/></span>
+            </p>
+
+            <p class="fragment  fade-in">
+                <b>8,779 tps</b> vs <b>1,853,829 tps</b>
+            </p>
+        </section>
+
+        <section data-transition="zoom">
+            <h1>Tron<br/>Dev Tools</h1>
+        </section>
+        <section>
+            <p>
+                <i>on Ethereum</i>
+            <h2>web3</h2>
+
+            <span class="fragment fade-up">
+
+                <i>on Tron</i>
+            <h2>tronweb</h2>
+
+        </span>
+        </section>
+        <section>
+
+            <p>
+                <i>on Ethereum</i>
+            <h2>truffle framework</h2>
+
+
+            <span class="fragment fade-up">            
+        <i>on Tron</i>
+            <h2>tronbox</h2>
+        </span>
+            <span class="fragment fade-up">
+<h2>Tron studio</h2>
+                </span>
         </section>
 
         <section>
-            <h2>idea</h2>
+            <p>
+                <i>on Ethereum</i>
+            <h2>infura</h2>
 
-            <p>vs</p>
 
-            <h2>execution</h2>
+            <span class="fragment fade-up">            
+        <i>on Tron</i>
+            <h2>trongrid</h2>
 
-            <p>&nbsp;</p>
-
-            <p class="fragment fade-up">A misunderstanding</p>
+        </span>
         </section>
 
         <section>
-            <section data-background-image="materials/the-matrix.jpg"></section>
+            <p>
+                <i>on Ethereum</i>
+            <h2>ganache</h2>
 
-            <section>
-                <h2>the three-acts structure</h2>
 
-                <img class="fragment" src="materials/3acts.png"/>
-            </section>
+            <span class="fragment fade-up">            
+        <i>on Tron</i>
+            <h2>tron quickstart</h2>
 
-            <section><h3>The first act</h3>
-
-                <h2>set up</h2>
-
-                <p class="fragment">establishes the main characters, their relationships and the world they live
-                    in</p></section>
-
-            <section data-background-image="materials/data-pusher.png"></section>
-
-            <section data-background-image="materials/at-office.jpg"></section>
-
-            <section data-background-image="materials/wake-up-neo.jpg">
-                <p style="color:white">the "inciting incident" confronts the protagonists<br/>
-                    <img src="materials/transparent.png" style="height:400px; border:0;background: none;opacity:0"/>
-                </p>
-            </section>
-            <section data-background-image="materials/wtf.png">
-            </section>
-            <section data-background-image="materials/the-matrix-has-you.png">
-            </section>
-
-            <section data-background="materials/the-matrix-red-pill-blue-pill.jpg">
-                <p style="color:white">the "plot point 1" changes protagonists' life forever<br/>
-                    <img src="materials/transparent.png" style="height:400px; border:0;background: none;opacity:0"/>
-                </p>
-            </section>
-
-            <section>
-                <h3>second act</h3>
-
-                <h2>confrontation</h2>
-
-                <p class="fragment">is where the protagonists attempt to resolve the new problems they have</p>
-            </section>
-
-            <!--<section data-background-image="materials/real-world-1.png">-->
-
-            <!--</section>-->
-            <section data-background-image="materials/real-world-2.png"></section>
-            <section data-background-image="materials/real-world-3.png"></section>
-            <!--<section data-background-image="materials/real-world-4.png"></section>-->
-            <section data-background-image="materials/learning.png"></section>
-            <section data-background-image="materials/learning-2.png"></section>
-            <section data-background-image="materials/mid-point.png">
-                <p style="color:white">the "midpoint"</p>
-            </section>
-
-            <section data-background-image="materials/complication-1.png">
-                <!--<p style="color:white">complication over complication will occurs to make protagonists' life worse and-->
-                <!--worse</p>-->
-            </section>
-            <section data-background-image="materials/complication-2.png"></section>
-            <section data-background-image="materials/complication-3.png"></section>
-            <!--<section data-background-image="materials/complication-4.png"></section>-->
-            <!--<section data-background-image="materials/complication-5.png"></section>-->
-            <!--<section data-background-image="materials/complication-6.png"></section>-->
-            <section data-background-image="materials/all-is-lost.png">
-                <p style="color:white">the "all is lost" moment</p>
-            </section>
-
-            <section data-background-image="materials/2nd-turning-point2.png">
-                <p style="color:white">the "plot point 2"</p>
-            </section>
-
-            <section>
-                <h3>third act</h3>
-
-                <h2>resolution</h2>
-
-                <p class="fragment">with the new awareness of the protagonists, the third act is where the story
-                    reaches its most tense point</p>
-            </section>
-            <section data-background-image="materials/war1.png">
-
-            </section>
-            <section data-background-image="materials/war2.png"></section>
-            <section data-background-image="materials/twist.png">
-                <p style="color:white">the "third-act twist"</p>
-            </section>
-            <section data-background-image="materials/she-loves-him.png"></section>
-            <section data-background-image="materials/he-is-the-one.png"></section>
-            <section data-background-image="materials/resolution.png"><p style="color:white">the resolution</p>
-            </section>
+        </span>
         </section>
 
         <section>
-            <h3>what happens with a single scene?</h3>
+            <p>
+                <i>on Ethereum</i>
+            <h2>ropsten, rinkeby, kovan</h2>
 
-            <p class="fragment">many good scenes have a three-acts structure, which in this case is called
-                "three-beats structure"</p>
 
-            <p class="fragment">and many directors respect a three-acts structure even for the single cut</p>
+            <span class="fragment fade-up">            
+        <i>on Tron</i>
+            <h2>shasta</h2>
+
+        </span>
+        </section>
+        <section>
+            <h1>What</h1>
+            <h1 class="fragment">next?</h1>
+        </section>
+
+        <section data-transition="zoom" data-background-image="materials/the-matrix.jpg"></section>
+        <section data-transition="slide" data-background-image="materials/the-matrix-red-pill-blue-pill.jpg">
+
+            <h3 class="fragment" style="color:white">
+                Which one will you chose?
+            </h3>
+        </section>
+        <section data-transition="zoom" data-background-image="materials/the-blue-pill.jpg">
+
+            <h1 style="color:white">
+                The blue pill???
+            </h1>
 
         </section>
 
         <section>
-            <h3>comparision film-startup</h3>
-            <table>
-                <tr class="fragment">
-                    <td>set up
-                    <td>
-                    <td>start up</td>
-                    <td>idea</td>
-                </tr>
-                <tr class="fragment">
-                    <td>confrontation
-                    <td>
-                    <td>product, market fit, etc.</td>
-                    <td>execution</td>
-                </tr>
-                <tr class="fragment">
-                    <td>resolution
-                    <td>
-                    <td>exit</td>
-                    <td></td>
-                </tr>
-            </table>
+            <h3>Let's repeat the question...</h3>
+        </section>
+
+        <section data-transition="slide" data-background-image="materials/the-matrix-red-pill-blue-pill.jpg">
+
+            <h3 style="color:white">
+                Which one will you chose?
+
+            </h3>
         </section>
 
         <section>
-            <h3>startups have every day problems which they solve implementing a three-beats structure</h3>
-
-            <p>idea | execution | resolution</p>
-
-            <p>&nbsp;</p>
-            <h4 class="fragment">wait a moment, what about the development of the smallest piece of code?</h4>
-            <h4 class="fragment">You know the answer: <b>the pattern is the same</b></h4>
-        </section>
-
-        <section>
-            <p>this means that</p>
-
-            <h2 class="fragment">the contraposition between ideas and execution is a nonsense</h2>
-        </section>
-
-        <section>
-            <h2>let's go back to the innovation. Is creativity really required?</h2>
-        </section>
-
-        <!--<section>-->
-
-        <!--<section data-background-image="materials/bed1.png">-->
-        <!--<h3 style="background-color: white">Morrison Hospital, early 90s</h3>-->
-
-        <!--<p class="fragment" style="background-color: white">Pfizer doctors where experimenting a new drug,-->
-        <!--called <i>sildenafil</i>,-->
-        <!--to treat hypertension and angina pectoris</p>-->
-        <!--</section>-->
-
-        <!--<section data-background-image="materials/bed2.png">-->
-        <!--<p style="background-color: white">the drug had an irrelevant effect against angina<span-->
-        <!--class="fragment">, but it could induce-->
-        <!--marked penile erections</span></p>-->
-        <!--</section>-->
-
-        <!--<section data-background-image="materials/the-blue-pill.jpeg">-->
-        <!--<h1 style="color: white">the blue pill</h1>-->
-        <!--</section>-->
-        <!--</section>-->
-
-        <section>
-            <section>
-                <h4>in 2003 Jack Dorsey, evan williams, biz stone and noah glass had an idea</h4>
-
-                <h3 class="fragment">a public service to enable users to send and read 140-character messages</h3>
-
-                <h1 class="fragment">twitter</h1>
-            </section>
-        </section>
-
-        <section>
-            <section>
-                <h4>in 2009 Travis Kalanick and Garrett Camp where trying to solve a problem with cabs which many
-                    other had tried to solve before them, failing</h4>
-
-                <h3 class="fragment">their solution was to start with a very specific niche: a black cars club</h3>
-
-                <h1 class="fragment">uber</h1>
-            </section>
-        </section>
-
-        <section>
-            <section>
-                <h4>John Pemberton was a Confederate Colonel and a pharmacist who
-                    became addicted to morphine during the Civil War</h4>
-
-                <h3 class="fragment">His medical solution was based on coca leaves and coca nuts, and
-                    accidentally his lab assistant mixed the two with carbonated water</h3>
-
-                <h1 class="fragment">coca-cola</h1>
-            </section>
-        </section>
-
-        <section>
-            <h3>why do people spend time and money developing
-                products that possibly never see the light of day?</h3>
-
-            <p class="fragment">psychologists attribute it to an overextimation of
-                their knowledge: a "cognitive bias"</p>
-
-            <p class="fragment">at a certain point, the entrepreneurs will develop an "affective bias"</p>
-
-        </section>
-
-        <section>
-
-            <h2>despite their stubborness, what are the feelings that move people?</h2>
-
-            <h2 class="fragment">do they depend on the stage of the startup?</h2>
-        </section>
-
-        <section>
-            <h3>passion</h3>
-
-            <h3 class="fragment">excitement</h3>
-
-            <h3 class="fragment">competitiveness</h3>
-
-            <h3 class="fragment">arrogance</h3>
-
-            <h3 class="fragment">humility</h3>
-
-            <h3 class="fragment">affection</h3>
-
-            <h3 class="fragment">sense of duty</h3>
-        </section>
-
-        <section>
-
-            <h2>what about intelligence?</h2>
-
-            <h2 class="fragment">are geniuses really arrogant?</h2>
-        </section>
-
-        <section>
-
-            <p>but first</p>
-
-            <h2>what is intelligence?</h2>
-        </section>
-
-        <section>
-            <h4>psychologists differentiate intelligence<br/>into specific "modalities"</h4>
-
-            <p class="fragment">Logical–mathematical</p>
-
-            <p class="fragment">Visual–spatial</p>
-
-            <p class="fragment">Verbal–linguistic</p>
-
-            <p class="fragment">Musical–rhythmic and harmonic</p>
-
-            <p class="fragment">Bodily–kinesthetic</p>
-
-            <p class="fragment">Interpersonal</p>
-
-            <p class="fragment">...</p>
-
-        </section>
-
-        <section>
-            <aside class="notes">You are a CEO and you have a problem</aside>
-            <img src="materials/GAT-Log.png"/>
-        </section>
-
-        <section>
-            <h2>let me tell you a joke</h2>
-        </section>
-
-        <section>
-            <img src="materials/GAT-Log.png" width="50%"/>
-
-            <p class="fragment">You are the CEO of your company.</p>
-
-            <p class="fragment">Which is your solution?</p>
-        </section>
-
-        <section><h2>hiring someone who can find the solution faster than you</h2></section>
-
-        <section>
-            <h1>let's talk about arrogance</h1>
-
-        </section>
-
-        <section>
-            <h3>The problem with the world is that the intelligent people are full of doubts, while the stupid ones are
-                full of confidence.</h3>
-
-            <p>&nbsp;</p>
-            <h4>Charles Bukowski</h4>
-        </section>
-
-        <section>
-            <section>
-                <p>Francois Truffaut on Michelangelo Antonioni</p>
-
-                <p><b>“Antonioni is the only important director I have nothing good to say about. He bores me.”</b></p>
-            </section>
-
-            <section><p>
-
-                Ingmar Berman on Orson Welles</p>
-
-                <p><b>
-                    “For me he’s just a hoax. It’s empty. It’s not interesting. It’s dead. Citizen Kane is a
-                    total bore.”
-                </b></p></section>
-
-            <section><p>Orson Welles on Jean-Luc Godard</p>
-
-                <p><b>
-                    “His message is what he cares about these days, and,
-                    like most movie messages, it could be written on the head of a pin.”
-                </b></p></section>
-            <section><p>
-                Werner Herzog on Jean-Luc Godard</p>
-
-                <p><b>
-                    “Someone like Jean-Luc Godard is for me intellectual counterfeit money when compared to a good
-                    kung-fu film.”</b></p>
-
-            </section>
-        </section>
-
-        <section>
-            <h3>historically, the most important discoveries were done by very young people.</h3>
-        </section>
-
-        <section>
-
-            <h1>The end</h1>
+            <p><img src="materials/tronLogo.png" width="400" style="border:0;box-shadow:none"/></p>
+            <p><br/><br/>Francesco Sullo<br/>
+                Technical Lead Manager at TRON<br/>
+                &lt;francesco@tron.network&gt;</p>
         </section>
 
     </div>
@@ -438,41 +201,41 @@
 
 <script>
 
-    // More info https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+  // More info https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
 
-        transition: 'convex', // none/fade/slide/convex/concave/zoom
+    transition: 'convex', // none/fade/slide/convex/concave/zoom
 
-        // More info https://github.com/hakimel/reveal.js#dependencies
-        dependencies: [
-            {
-                src: 'reveal.js/lib/js/classList.js', condition: function() {
-                return !document.body.classList;
-            }
-            },
-            {
-                src: 'reveal.js/plugin/markdown/marked.js', condition: function() {
-                return !!document.querySelector('[data-markdown]');
-            }
-            },
-            {
-                src: 'reveal.js/plugin/markdown/markdown.js', condition: function() {
-                return !!document.querySelector('[data-markdown]');
-            }
-            },
-            {
-                src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() {
-                hljs.initHighlightingOnLoad();
-            }
-            },
-            { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
-            { src: 'reveal.js/plugin/notes/notes.js', async: true }
-        ]
-    });
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+      {
+        src: 'reveal.js/lib/js/classList.js', condition: function () {
+          return !document.body.classList;
+        }
+      },
+      {
+        src: 'reveal.js/plugin/markdown/marked.js', condition: function () {
+          return !!document.querySelector('[data-markdown]');
+        }
+      },
+      {
+        src: 'reveal.js/plugin/markdown/markdown.js', condition: function () {
+          return !!document.querySelector('[data-markdown]');
+        }
+      },
+      {
+        src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function () {
+          hljs.initHighlightingOnLoad();
+        }
+      },
+      {src: 'reveal.js/plugin/zoom-js/zoom.js', async: true},
+      {src: 'reveal.js/plugin/notes/notes.js', async: true}
+    ]
+  });
 
 </script>
 
