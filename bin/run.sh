@@ -5,7 +5,5 @@ docker rm -f dev-tools-slides
 docker run \
   --name dev-tools-slides \
   -p 9876 \
-  -e VIRTUAL_HOST=sullo.co,www.sullo.co,tron-dev-tools-slides.sullo.co \
-  -e LETSENCRYPT_HOST=sullo.co,www.sullo.co,tron-dev-tools-slides.sullo.co \
-  -e LETSENCRYPT_EMAIL=admin@sullo.co \
+  -e VIRTUAL_HOST=tron-dev-tools-slides.sullo.co \
   -d tron-dev-tools-slides
